@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Week Epicode</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="containerTest">
+      <header id="header">
+        <div class="container-logo block-inline">
+          <img src="assets/css/epicode_logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="item " id="position-top-right">
+          <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <title>Layer 1</title>
+              <circle id="circle-background" class="circle-background" r="70" cy="81" cx="81" stroke-width="10"
+                stroke="rgba(62 62 62,0.5)" fill="none" />
+              <circle id="circle" class="circle_animation" r="70" cy="81" cx="81" stroke-width="10" stroke="#00FFFF"
+                fill="none" />
+            </g>
+          </svg>
+          <div class="timer-content">
+            <span class="timer-label top-label">SECONDS</span>
+            <h2>10</h2>
+            <span class="timer-label bottom-label">REMAINING</span>
+          </div>
+        </div>
+      </header>
+
+      <main id="main2">
+        <h1 id="titolo2"></h1>
+        <!-- Contenitore principale per impostare gli elementi all interno della webApp-->
+        <div id="container-answers"></div>
+        <aside id="aside">
+          <p>QUESTION <span id="questions-counter">1 </span><span class="questViolet"> /10</span></p>
+          <button id="invio-risposta" type="button">NEXT</button>
+        </aside>
+      </main>
+    </div>
+    <script src="assets/JS/script.js"></script>
+  </body>
+</html>

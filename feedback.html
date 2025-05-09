@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Feedback page where we tell how it's going" />
+  <title>Feedback</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="container-logo">
+      <img src="assets/css/epicode_logo.png" alt="logo" id="logo" />
+    </div>
+  </header>
+  <main id="main4">
+    <div class="container-titolo">
+      <h1 id="titolo4">Tell us how it's going</h1>
+      <p>From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</p>
+    </div>
+
+    <div class="container-stelline">
+      <input type="checkbox" id="star-1" value="1" />
+      <label class="fa-solid fa-star star" for="star-1"></label>
+      <input type="checkbox" id="star-2" value="2" />
+      <label class="fa-solid fa-star star" for="star-2"></label>
+      <input type="checkbox" id="star-3" value="3" />
+      <label class="fa-solid fa-star star" for="star-3"></label>
+      <input type="checkbox" id="star-4" value="4" />
+      <label class="fa-solid fa-star star" for="star-4"></label>
+      <input type="checkbox" id="star-5" value="5" />
+      <label class="fa-solid fa-star star" for="star-5"></label>
+      <input type="checkbox" id="star-6" value="6" />
+      <label class="fa-solid fa-star star" for="star-6"></label>
+      <input type="checkbox" id="star-7" value="7" />
+      <label class="fa-solid fa-star star" for="star-7"></label>
+      <input type="checkbox" id="star-8" value="8" />
+      <label class="fa-solid fa-star star" for="star-8"></label>
+      <input type="checkbox" id="star-9" value="9" />
+      <label class="fa-solid fa-star star" for="star-9"></label>
+      <input type="checkbox" id="star-10" value="10" />
+      <label class="fa-solid fa-star star" for="star-10"></label>
+    </div>
+
+    <div id="comment-form-container">
+      <label for="commento">Leave us an open feedback about your experience so far</label>
+      <textarea placeholder="Write your comment here" id="commento" name="commento"></textarea>
+      <button onclick="cambiaPagina()" class="bottone" type="button" id="invio-commento">MORE INFO</button>
+    </div>
+  </main>
+</body>
+<script>
+  function cambiaPagina() {
+    window.open("https://epicode.com/it/", "_blank");
+  }
+</script>
+
+</html>

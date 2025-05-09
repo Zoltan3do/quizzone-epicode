@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Reset di base per padding, margin e box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Stile di base per il body con background */
+body {
+  background: url('bg.jpg') center/cover no-repeat !important;
+}
+
+/* Sezione Header */
+#header {
+  width: 100%;
+  margin: 20px 0 3%;
+}
+
+/* Sezione Logo */
+.container-logo,
+img {
+  padding: 10px;
+  margin-left: 90px;
+  width: 35%;
+}
+
+/* Contenitore delle istruzioni */
+#container-instructions {
+  font: 1.1em "Outfit", sans-serif;
+  text-align: left;
+  margin-left: -33%;
+}
+
+/* Titolo principale */
+#titolo1 {
+  font: 4.2rem "Outfit", sans-serif;
+  font-weight: 250;
+  margin-bottom: 13px;
+  width: 100%;
+  color: #e7e7eb;
+  line-height: 1;
+}
+
+#titolo1 .bold {
+  margin-top: -20px;
+  display: block;
+  font-weight: 600;
+}
+
+/* Contenitore della lista e testo in grassetto */
+.bold {
+  color: #e7e7eb;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+
+/* Contenitore della lista con margine e altezza della linea */
+#container-lista {
+  margin-left: 15px;
+  color: #bfd1d7;
+  line-height: 1.5;
+}
+
+/* Testo in viola */
+.violet {
+  font: 1.8em "Outfit", sans-serif;
+  font-weight: 600;
+  margin: 30px 0 7px;
+  color: #c2128d;
+}
+
+/* Contenitore dell'istruzione e paragrafi */
+#container-instruction,
+p {
+  font: 0.9em "Inter Tight", sans-serif;
+  margin-bottom: 30px;
+  color: #bfd1d7;
+}
+
+/* Contenitore del form di indice */
+#container-form-index {
+  margin-top: 100px;
+  color: white;
+  font-weight: 400;
+}
+
+/* Icone dei simboli materiali */
+.material-symbols-outlined {
+  font-size: 21px;
+  text-align: center;
+  position: relative;
+  top: -3.5px;
+  left: -3.5px;
+  font-weight: 900;
+}
+
+/* Stile della politica */
+#policy {
+  font: 0.9em "Outfit", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Bottone Start */
+#start {
+  color: white;
+  border: 1px solid white;
+  position: relative;
+  right: -180px;
+}
+
+/* Checkbox rude */
+#rude-checkbox {
+  height: 17px;
+  width: 17px;
+  border: 1.8px solid white;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Stili comuni per #start e #container-instructions */
+#start,
+#container-instructions {
+  display: inline-block;
+}
+
+/* Posizione assoluta per elemento in alto a destra */
+#position-top-right {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+/* Etichetta del timer */
+.timer-label {
+  font-size: 12px;
+  color: white;
+}
+
+/* Contenitore del test */
+.containerTest {
+  width: 100%;
+  text-align: center;
+}
+
+/* Elemento del test */
+.item {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+/* Rotazione dell'SVG */
+svg {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Animazione del cerchio */
+.circle_animation {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  transition: all 1s linear;
+  stroke: #00ffff;
+  stroke-width: 15;
+}
+
+/* Sfondo del cerchio */
+.circle-background {
+  stroke: rgba(156, 156, 156, 0.3);
+  stroke-width: 15;
+}
+
+/* Contenuto del timer */
+.timer-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.timer-content h2 {
+  margin: 5px 0;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* Main per la seconda pagina */
+#main2 {
+  margin: 8% auto 0;
+  color: white;
+  width: 70%;
+}
+
+/* Titolo della seconda pagina */
+#titolo2 {
+  margin-bottom: 50px;
+  font: 2rem "Outfit", helvetica, sans-serif;
+  font-weight: 500;
+}
+
+/* Contenitore delle risposte */
+#container-answers div {
+  display: inline-block;
+  width: 41%;
+  padding: 25px 30px;
+  border: 0 solid white;
+  border-radius: 200px;
+  box-shadow: -1px -2.5px 2px 1.7px;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font: 1.1em "Outfit", sans-serif;
+  font-weight: 600;
+  transition-duration: 3s;
+}
+
+/* Bottone di invio risposta */
+#invio-risposta {
+  display: inline-block;
+  color: #0a274f;
+  border: 1px solid white;
+  font-weight: 700;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  height: 55px;
+  width: 200px;
+  margin-top: -500px;
+  transition-duration: 0.2s;
+}
+
+/* Hover per le risposte */
+#container-answers div:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, #d20094, #900080);
+}
+
+/* Hover per i bottoni */
+#invio-risposta:hover,
+#valutazione:hover,
+#invio-commento:hover {
+  background-color: #02ffff;
+  box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
+}
+
+/* Sezione laterale */
+#aside {
+  margin-top: 50px;
+}
+
+#aside p {
+  display: inline-block;
+  width: 15%;
+  margin-right: 60%;
+  font-size: 1.2rem;
+}
+
+/* Testo viola */
+.questViolet {
+  color: #c2128d;
+  font-size: 1.1em;
+}
+
+/* Main per la terza pagina */
+#main3 {
+  text-align: center;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+
+/* Titolo della terza pagina */
+#titolo3 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+/* Sottotitolo */
+.subTitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+}
+
+/* Contenitore del diagramma */
+#containerDiagram {
+  display: inline-block;
+  width: 380px;
+  height: 380px;
+  margin: 0 auto;
+}
+
+/* Contenitore della percentuale */
+.container-percentuale {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
+  margin-top: -66vh;
+}
+
+/* Allineamento a sinistra */
+.left {
+  text-align: left;
+  margin-right: -10%;
+}
+
+/* Allineamento a destra */
+.right {
+  text-align: right;
+  margin-left: -10%;
+}
+
+/* Stile dei titoli della percentuale */
+.container-percentuale h2 {
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: -10px;
+}
+
+/* Primo paragrafo */
+.firstP {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Secondo paragrafo */
+.secP {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Bottone di valutazione */
+#valutazione {
+  margin-top: 40px;
+  color: #0a274f;
+  border: 1px solid white;
+  font-weight: 700;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  height: 55px;
+  width: 200px;
+  transition-duration: 0.3s;
+}
+
+/* Titolo della quarta pagina */
+#titolo4 {
+  font: 3rem "Outfit", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #e7e7eb;
+  text-align: center;
+}
+
+/* Contenitore del titolo */
+.container-titolo {
+  width: 78%;
+  margin: 0 auto;
+}
+
+/* Main per la prima e quarta pagina */
+#main1,
+#main4 {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Paragrafo nel contenitore del titolo */
+.container-titolo p {
+  font: 1.8em "Outfit", sans-serif;
+}
+
+/* Contenitore delle stelline */
+.container-stelline {
+  width: 45%;
+  font-size: 5em;
+  margin-bottom: 30px;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  font-weight: 900;
+  justify-content: center;
+}
+
+/* Stile delle stelline */
+.container-stelline .star {
+  font-size: 0.8em;
+  color: #0a274f;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+/* Nascondere il checkbox */
+.container-stelline input[type="checkbox"] {
+  display: none;
+}
+
+/* Hover e selezione delle stelline */
+.container-stelline .star:hover,
+.container-stelline .star:hover ~ .star,
+.container-stelline input[type="checkbox"]:checked ~ label.star,
+.container-stelline input[type="checkbox"]:checked ~ label.star + input[type="checkbox"] ~ label.star {
+  color: #00ffff;
+}
+
+/* Etichetta del form di commento */
+#comment-form-container label {
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  font-family: "Outfit";
+}
+
+/* Input per il commento */
+#commento {
+  margin-top: 50px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.4em;
+  border-bottom: 2px solid #c2138e;
+  height: min-content;
+  color: white;
+  resize: none;
+}
+
+/* Focus e attivazione dell'input */
+#commento:focus,
+#commento:active {
+  outline: none;
+}
+
+/* Contenitore del form di commento */
+#comment-form-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* Stile delle stelline */
+.star {
+  margin: 0 -5px;
+  transform: scale(0.75);
+}
+
+/* Stile per i bottoni di start e invio commento */
+#start,
+#invio-commento {
+  margin: 60px auto 0;
+  font-weight: 700;
+  font-size: 1.2em;
+  background-color: #02ffff;
+  color: #0a274f;
+  border: 1px solid white;
+  transition-duration: 0.2s;
+}
+
+/* Dimensioni comuni dei bottoni */
+.bottone {
+  display: inline-block;
+  height: 55px;
+  width: 200px;
+}
+
+/* Hover per il checkbox */
+#rude-checkbox:hover {
+  cursor: pointer;
+}
+
+/* Stile del bottone di invio commento */
+#invio-commento {
+  margin-top: 40px;
+  color: #0a274f;
+  border: 1px solid white;
+  font-weight: 700;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  height: 55px;
+  width: 200px;
+}
+
+/* Stile per la domanda selezionata */
+.selectedQuestion {
+  background: linear-gradient(to bottom, #d20094, #900080);
+}
